@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+.clickme{
+  cursor: pointer;
+}
+
 .message-overlay {
   position: fixed;
   top: 0;
@@ -39,22 +43,32 @@ body {
 }
 
 .active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-slide {
-  width: auto;
   height: 100%;
+  width: auto;
 }
 
 .textbox {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  background-color: rgba(193, 221, 248, 0.6);
   width: 30%;
   padding: 10px;
   text-align: left;
+  background-color: rgba(193, 221, 248, 0.6);
+  margin-right: 20px;
+}
+
+.slide.no-textbox .img-slide {
+  margin: auto;
+}
+
+.question {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
 }
 
 .right {
@@ -83,6 +97,7 @@ body {
   .img-slide {
     width: 100%;
     height: auto;
+    margin: 0;
   }
 
   .textbox {
@@ -96,8 +111,13 @@ body {
     background-color: rgba(193, 221, 248, 0.8);
   }
 
-  .textbox p{
+  .textbox p {
     margin: 2px;
     padding: 4px;
+  }
+
+  .right,
+  .wrong {
+    margin-bottom: 8px !important;
   }
 }
