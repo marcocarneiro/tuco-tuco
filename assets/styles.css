@@ -68,7 +68,8 @@ body {
 .question {
   font-weight: bold;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin: 6px 0;
 }
 
 .right {
@@ -90,8 +91,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 1em;
+  .slide {
+    flex-direction: column;
   }
 
   .img-slide {
@@ -101,14 +102,12 @@ body {
   }
 
   .textbox {
-    position: absolute;
-    top: unset;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: fit-content;
     padding: 4px;
     background-color: rgba(193, 221, 248, 0.8);
+    margin: 0;
   }
 
   .textbox p {
