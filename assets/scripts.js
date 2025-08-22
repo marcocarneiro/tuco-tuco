@@ -4,9 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const showSlide = (index) => {
     slides.forEach((slide, i) => {
+      // 
       slide.classList.remove("active");
+      slide.classList.remove("animate__animated");
+      slide.classList.remove("animate__fadeIn");
       if (i === index) {
         slide.classList.add("active");
+        slide.classList.add("animate__animated");
+        slide.classList.add("animate__fadeIn");
       }
     });
   };
