@@ -17,6 +17,11 @@ body {
   height: 100%;
   overflow: hidden;
   text-align: center;
+  display: none;
+}
+
+.active{
+  display: block;
 }
 
 .img-slide{
@@ -28,8 +33,26 @@ body {
     position: absolute;
     top: 40px;
     left: 40px;
-    background-color: rgba(193, 221, 248, 0.3);
+    background-color: rgba(193, 221, 248, 0.6);
     width: 30%;
     padding: 10px;
     text-align: left;
+}
+
+.right{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 3px 3px #777;
+  background-color: #38ec8c;
+  color: #fff;
+}  
+
+.wrong{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 3px 3px #777;
+  background-color: #ec3838;
+  color: #fff;
 }
