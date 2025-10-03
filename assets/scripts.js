@@ -1,4 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
+const swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    allowTouchMove: true, // permite swipe com o dedo
+  });
+
+  // Bloqueia avanço automático em slides com perguntas
+  swiper.on("slideChangeTransitionStart", () => {
+    const currentSlide = swiper.slides[swiper.activeIndex];
+    const hasQuestion = currentSlide.querySelector(".question");
+
+    if (hasQuestion) {
+      // trava navegação
+      swiper.allowSlideNext = false;
+
+      // adiciona listeners nas respostas
+      const right = currentSlide.querySelector(".right");
+      const wrong = currentSlide.querySelector(".wrong");
+
+      if (right) {
+        right.onclick = () => {
+          swiper.allowSlideNext = true;
+          swiper.slideNext(); // avança depois da resposta certa
+        };
+      }
+
+      if (wrong) {
+        wrong.onclick = () => {
+          wrong.style.color = "red"; // feedback simples
+        };
+      }
+    } else {
+      swiper.allowSlideNext = true; // libera slides normais
+    }
+  });
+
+
+
+
+
+/* document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
 
@@ -64,4 +106,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   showSlide(currentSlide);
-});
+}); */
