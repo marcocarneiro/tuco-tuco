@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O buraco do tuco-tuco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper flex-container">
+        <div id="capa" class="swiper-slide slide">
+          <img src="assets/capa.jpg" class="img-slide" alt="Slide 2" />
+        </div>
+
+        <div id="intro" class="swiper-slide slide">
+          <img src="assets/intro.jpg" class="img-slide" alt="Slide 2" />
+          <div class="textbox">
+            <p>
+              Pedro viu um tuco-tuco entrando num buraco
+              quando ia para a escola com sua irmã e sua mãe.
+            </p>
+          </div>
+        </div>
+
+        <div id="slide1" class="swiper-slide slide">
+          <img src="assets/slide-1.jpg" class="img-slide" alt="Slide 1" />
+          <div class="textbox">
+            <p>
+              Pedro muito curioso, foi atrás tuco-tuco, Bia foi logo atrás,
+              os dois se enfiaram no buraco.
+            </p>
+          </div>
+        </div>
+
+        <div id="slide2" class="swiper-slide slide">
+          <img src="assets/slide-2.jpg" class="img-slide" alt="Slide 2" />
+          <div class="textbox">
+            <p>
+              Bia e Pedro foram parar num lugar muito estranho. <br>
+              O tuco-tuco sumiu entre as plantas esquisitas.
+            </p>
+          </div>          
+        </div>
+
+        <div id="slide3" class="swiper-slide slide">
+          <img src="assets/slide-3.jpg" class="img-slide" alt="Slide 3" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-1')" class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              &#8212; Ei, vocês estão sujos!! Eu posso <br>dar um banho em vocês - disse o
+              duende.
+            </p>            
+          </div>
+          <div id="quest-1" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">Quem pode te dar banho?</p>
+            <p class="right">
+              Somente mamãe ou quem ela autorizar pode me dar banho.
+            </p>
+            <p class="wrong">O duende pode me dar banho.</p>
+          </div>
+        </div>
+
+        <div id="slide4" class="swiper-slide slide">
+          <img src="assets/slide-4.jpg" class="img-slide" alt="Slide 4" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-2')" 
+            class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              Mais adiante uns desconhecidos diziam coisas estranhas.<br />
+              &#8212; BOM DIA CRIANÇAS!! - disse o urubu. <br />
+              &#8212; Olha só, o seu peitinho está crescendo - disse a bruxa. <br />
+              &#8212; Quer ver o que tem nessa caixa? - disse o moço com chapelão. <br />
+            </p>            
+          </div>
+          <div id="quest-2" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">
+              Quais frases você deve contar para mamãe ou papai?
+            </p>
+            <p class="right">Todas as frases.</p>
+            <p class="wrong">Somente a frase do urubu.</p>
+          </div>
+        </div>
+
+        <div id="slide5" class="swiper-slide slide">
+          <img src="assets/slide-5.jpg" class="img-slide" alt="Slide 5" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-3')" 
+            class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              A bruxa contou um segredo que deixaram os dois muito tristes.<br />
+              &#8212; Bzzz bzzz zzzzz bzzz! Não contem para ninguém, esse é o nosso segredo - disse a
+              bruxa.
+            </p>            
+          </div>
+          <div id="quest-3" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">
+              O que Bia e Pedro devem fazer?
+            </p>
+            <p class="right">Contar o segredo para mamãe e papai.</p>
+            <p class="wrong">Guardar o segredo contado pela bruxa.</p>
+          </div>
+        </div>
+
+        <div id="slide6" class="swiper-slide slide">
+          <img src="assets/slide-6.jpg" class="img-slide" alt="Slide 6" />
+          <div class="textbox">
+            <p>
+              Mais adiante avistaram um lago bonito de águas cristalinas. 
+              Peixes, botos, sereias e tritões brincam na água.<br />
+              Pedro e Bia caem na água para brincar também.
+            </p>            
+          </div>
+        </div>
+
+        <div id="slide7" class="swiper-slide slide">
+          <img src="assets/slide-7.jpg" class="img-slide" alt="Slide 7" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-4')" 
+            class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              Um tritão tenta brincar de forma estranha. <br />
+              &#8212; As partes cobertas pela sunga são só minhas, ninguém toca! -
+              disse Pedro.
+            </p>            
+          </div>
+          <div id="quest-4" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">
+              Quais as partes do corpo que só Pedro e Bia podem tocar?
+            </p>
+            <p class="right">
+              Pedro pode tocar nas partes cobertas pela sua sunga e Bia pode tocar
+              nas partes cobertas pelo seu biquini. Ninguém pode tocar nessas partes
+            </p>
+            <p class="wrong">
+              Durante uma brincadeira qualquer um pode tocar nessas partes.
+            </p>
+          </div>
+        </div>
+        
+
+        <div id="slide8" class="swiper-slide slide">
+          <img src="assets/slide-8.jpg" class="img-slide" alt="Slide 8" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-6')" 
+            class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              Ao passar por uma árvore um ogro segura forte no braço da Bia
+              que grita "NÃO".
+            </p>            
+          </div>
+          <div id="quest-6" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">
+              Se alguém lhe tocar sem sua permissão, o que você faz?
+            </p>
+            <p class="right">Avisa papai, mamãe ou a professora.</p>
+            <p class="wrong">Não avisa ninguém.</p>
+          </div>
+        </div>
+        
+
+        <div id="slide9" class="swiper-slide slide">
+          <img src="assets/slide-9.jpg" class="img-slide" alt="Slide 9" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-7')" 
+            class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              No caminho um duende vestido de médico propõe uma brincadeira:<br />
+              &#8212; Ei crianças vamos brincar de médico? Tirem as roupas que eu
+              vou examinar vocês - disse o duende.
+            </p>            
+          </div>
+          <div id="quest-7" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">
+              Se alguém tentar tirar a sua roupa sem a permissão dos seus pais, o
+              que você faz?
+            </p>
+            <p class="right">Avisa papai, mamãe ou a professora.</p>
+            <p class="wrong">Não avisa ninguém.</p>
+          </div>
+        </div>
+        
+
+        <div id="slide10" class="swiper-slide slide">
+          <img src="assets/slide-10.jpg" class="img-slide" alt="Slide 10" />
+          <div class="textbox">
+            <p>
+              Depois de muito caminhar, Pedro e Bia estão bem tristes e sem esperanças 
+              de voltar para casa. Pedro avista o tuco-tuco saindo do meio do mato.<br />
+              &#8212; Bia olha lá, é o tuco-tuco!!. Pra onde ele vai? Vamos segui-lo!!<br />
+            </p>            
+          </div>
+        </div>
+
+        <div id="slide11" class="swiper-slide slide">
+          <img src="assets/lide-11.jpg" class="img-slide" alt="Slide 11" />
+          <div class="textbox">
+            <p>
+              Pedro e Bia seguem o tuco-tuco até sairem na mesma praça onde estavam. Mamãe correu em direção aos dois travessos.<br />
+              &#8212; Nunca mais se afastem de mim sem avisar, é muito perigoso!<br />
+              &#8212; Aprendemos a lição mamãe, sempre avisaremos você ou o papai
+              para onde formos - disseram em uníssono.
+            </p>            
+          </div>
+        </div>
+
+        <div id="final" class="swiper-slide slide">
+          <img
+            src="assets/final.jpg"
+            class="img-slide"
+            alt="Final. O tuco-tuco olha para os leitores com uma cara marota observando os três irem embora."
+          />
+        </div>
+
+
+      </div>
+      <!-- Botões de navegação -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+    <div id="feedback" class="feedback-overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
