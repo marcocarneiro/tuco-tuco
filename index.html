@@ -48,10 +48,30 @@
 
         <div id="slide2" class="swiper-slide slide">
           <img src="assets/slide-2.jpg" class="img-slide" alt="Slide 2" />
+          <div class="textbox">
+            <p>
+              Bia e Pedro foram parar num lugar muito estranho. <br>
+              O tuco-tuco sumiu entre as plantas esquisitas.
+            </p>
+          </div>          
         </div>
 
         <div id="slide3" class="swiper-slide slide">
           <img src="assets/slide-3.jpg" class="img-slide" alt="Slide 3" />
+          <div class="textbox">
+            <button onclick="showQuestion('quest-1')" class="btn-question animate__animated animate__headShake animate__infinite">?</button>
+            <p>
+              &#8212; Ei, vocês estão sujos!! Eu posso <br>dar um banho em vocês - disse o
+              duende.
+            </p>            
+          </div>
+          <div id="quest-1" class="question animate__animated animate__bounceInUp">
+            <p class="question-txt">Quem pode te dar banho?</p>
+            <p class="right">
+              Somente mamãe ou quem ela autorizar pode me dar banho.
+            </p>
+            <p class="wrong">O duende pode me dar banho.</p>
+          </div>
         </div>
 
         <div id="slide4" class="swiper-slide slide">
@@ -101,6 +121,8 @@
       <div class="swiper-button-prev"></div>
 
     </div>
+
+    <div id="feedback" class="feedback-overlay"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/scripts.js"></script>
